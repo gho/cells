@@ -1,0 +1,69 @@
+body {
+  box-sizing: border-box;
+  font: 16px sans-serif;
+  margin: 0;
+}
+
+.board {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: 12px 12px;
+  background-image: repeating-linear-gradient(45deg, #bbb 0, #bbb 1px, #ccc 0, #ccc 50%);
+}
+
+.board > h2 {
+  margin: 0;
+  padding: 12px 15px;
+  font-size: 125%;
+  font-weight: 400;
+  background-color: #3c3767;
+  color: #e8e8e8;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px;
+}
+
+.board > main {
+  padding: 15px;
+}
+
+.sheet {
+  position: absolute;
+}
+
+.sheet > table {
+  opacity: 1;
+  background-color: #ccc;
+  border-collapse: collapse;
+}
+
+.sheet > table td,
+.sheet > table th {
+  border: 1px solid #aaa;
+  font-weight: normal;
+  padding: 0;
+}
+
+.header {
+  font-size: 75%;
+  text-align: center;
+}
+
+.header {
+  padding: 5px 10px 3px;
+}
+
+.cell {
+  width: 100px;
+}
+
+div.cell {
+  height: 14px;
+  font-size: 85%;
+  padding: 7px 7px 5px;
+  background-color: #fff;
+}
+
+input.cell {
+  border: 1px solid #fff;;
+  padding: 4px 6px;
+}
